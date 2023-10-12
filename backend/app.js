@@ -2,9 +2,9 @@ const express = require('express');
 const CountryRoutes = require('./src/routes/CountryRoutes');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 
-app.use('/country', CountryRoutes);
+app.use('/countries', CountryRoutes);
 app.get('/ping', (req, res) => {
     res.send('pong');
 });
