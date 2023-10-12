@@ -22,7 +22,7 @@ const Home = () => {
         </header>
         <div className={styles.container}>
             <p>Enter the name of a country !</p>
-            <Input className={styles.input} placeholder="Type a country" />
+            <Input placeholder="Type a country" />
         </div>
     </>
 }
