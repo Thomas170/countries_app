@@ -1,11 +1,19 @@
 import React from "react";
 import styles from "./Input.module.css";
-import Button from "../Button/Button";
 
-const Input = ({placeholder}) => {
+const Input = ({placeholder, changeValue}) => {
+
+    const handleInputChange = (event) => {
+        const { value } = event.target;
+        changeValue(value);
+    };
+
     return <div className={styles.container}>
-        <input placeholder={placeholder} className={styles.input}/>
-        <Button name="Search" color="blue" />
+        <input
+            onChange={handleInputChange}
+            placeholder={placeholder}
+            className={styles.input}
+        />
     </div>
 }
 
