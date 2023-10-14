@@ -1,3 +1,25 @@
 .App {
   text-align: center;
 }
+
+.custom-shape-divider-top-1697303559 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1697303559 svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 381px;
+}
+
+.custom-shape-divider-top-1697303559 .shape-fill {
+  fill: var(--main-color);
+}

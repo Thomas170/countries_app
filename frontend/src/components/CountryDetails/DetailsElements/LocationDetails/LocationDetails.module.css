@@ -1,3 +1,8 @@
+.map {
+    text-decoration: none; /* Remove underline */
+    color: #f68feb;
+}
+
 .flag {
     width: 90%;
     height: 420px;
@@ -23,7 +28,7 @@
 
 .value {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     margin-top: 40px;
-    margin-bottom: 4px;
+    color: #4b4b4b;
 }

@@ -8,7 +8,7 @@ const LocationDetails = ({details}) => {
         <p className={parentStyles.title}>Location</p>
         <p className={parentStyles.description}>
             If you want to know the location of the country, you can see on Google Maps:{' '}
-            <a href={details?.map} target="_blank" rel="noopener noreferrer"><strong>Click here to see the map !</strong></a>
+            <a className={styles.map} href={details?.map} target="_blank" rel="noopener noreferrer"><strong>Click here to see the map !</strong></a>
             <br/>During your visit, you'll have the opportunity to see and learn about the national flag of the country you're in.
             Flags hold significant cultural and historical importance and can convey a deep sense of identity and heritage.
             To appreciate the symbolism and significance of the local flag, it's worthwhile to explore its history and meaning.
