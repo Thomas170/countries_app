@@ -4,7 +4,19 @@
     align-items: center;
 }
 
+.title {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.description {
+    font-size: 18px;
+    width: 40%;
+    color: #525252;
+    margin-bottom: 80px;
+}
+
 .error {
-    color: red;
+    color: #de4343;
     width: 20%;
 }

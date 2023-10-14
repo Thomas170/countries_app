@@ -4,9 +4,10 @@
 }
 
 .input {
-    background-color: transparent;
+    background-color: white;
     border: 1px solid #b0b0b0;
-    border-radius: 8px;
-    padding: 12px;
+    border-radius: 12px;
+    padding: 16px;
     font-size: 16px;
+    min-width: 32vw;
 }

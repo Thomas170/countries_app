@@ -1,0 +1,36 @@
+.map {
+    text-align: left;
+    display: flex;
+    margin: 48px 0 20px 0;
+}
+
+.flag {
+    width: 90%;
+    height: 420px;
+    margin-left: 5%;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    font-size: 14px;
+    box-shadow: 2px 2px 8px 2px rgb(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.flag:hover {
+    box-shadow: 4px 4px 8px 2px rgb(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.centeredContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.value {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 4px;
+}

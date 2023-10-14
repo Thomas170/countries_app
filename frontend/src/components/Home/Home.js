@@ -6,35 +6,41 @@ import Loader from "../../shared/Loader/Loader";
 import SearchBar from "../../shared/SearchBar/SearchBar";
 
 const Home = () => {
+
     const [countryName, setCountryName] = useState(null);
     const [countryDetails, setCountryDetails] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
     const search = () => {
-        setError(null);
         setCountryDetails(null);
-        setLoading(true);
+        setError(null);
 
-        getCountryDetails(countryName).then(response => {
-            setLoading(false);
-            setCountryDetails(response.data);
-        }).catch(error => {
-            setLoading(false);
-            if (error.response.status === 404) {
-                setError('Didn\'t found the country. Are you sure the name is correct ?');
-            } else {
-                setError('API request failed.');
-            }
-        });
+        if (!countryName) {
+            setError('You need to enter the name of a country.');
+        } else {
+            setLoading(true);
+
+            getCountryDetails(countryName).then(response => {
+                setLoading(false);
+                setCountryDetails(response);
+            }).catch(error => {
+                setLoading(false);
+                if (error?.response?.status === 404) {
+                    setError('Didn\'t found the country. Are you sure the name is correct ?');
+                } else {
+                    setError('API request failed.');
+                }
+            });
+        }
     }
 
     return <>
         <header>
-            <h1>Countries App</h1>
+            <h1 className={styles.title}>Countries App</h1>
         </header>
         <div className={styles.container}>
-            <p>Enter the name of a country !</p>
+            <p className={styles.description}>You want to know everything about a country ? It has never been so simple!</p>
 
             <SearchBar
                 changeValue={(value) => { setCountryName(value) }}

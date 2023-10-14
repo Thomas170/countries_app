@@ -1,3 +1,22 @@
-.name {
+.container {
+    background-color: white;
+    width: 56vw;
+    margin: 60px 0;
+    border-radius: 48px;
+    text-align: left;
+    padding: 20px 140px;
+    font-size: 16px;
+    box-shadow: 0 0 2px 1px rgb(0, 0, 0, 0.1);
+}
 
+.name {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px 0 20px 0;
 }
