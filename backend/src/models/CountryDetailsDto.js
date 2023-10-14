@@ -8,12 +8,12 @@ class CountryDetailsDto {
         };
         this.area = data?.area;
         this.map = data?.maps?.googleMaps;
-        this.capital = data?.capital[0];
+        this.capital = data?.capital;
         this.capitalLocation = {
             latitude: data?.capitalInfo?.latlng[0],
             longitude: data?.capitalInfo?.latlng[1]
         };
-        this.languages = [data?.languages?.fra];
+        this.languages = Object.entries(data?.languages).map(([code, language]) => (language));
         this.population = data?.population;
         this.demonym = data?.demonyms?.eng?.m;
         this.flag = data?.flags?.png;
@@ -22,7 +22,7 @@ class CountryDetailsDto {
             symbol: currency.symbol
         }));
         this.car = {
-            signs: [data?.car?.signs[0]],
+            signs: data?.car?.signs,
             side: data?.car?.side
         };
         this.startOfWeek = data?.startOfWeek;
