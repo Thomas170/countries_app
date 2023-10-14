@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const backendApiUrl = process.env.BACKEND_API_URL || 'http://localhost:8000';
+const backendApiUrl = process.env.BACKEND_API_URL || 'https://countries-app-backend-eight.vercel.app';
 
 export async function getCountryDetails(name) {
     try {
