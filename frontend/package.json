@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docker": "docker build -t frontend-app . && docker run -p 3000:3000 frontend-app"
   },
   "eslintConfig": {
     "extends": [
