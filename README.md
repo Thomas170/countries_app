@@ -3,7 +3,7 @@
 
 # Countries App
 
-The principle of the project is to retrieve information concerning a country by entering its name
+The principle of the project is to retrieve information concerning a country by entering its name.
 
 
 ## Run Locally
