@@ -1,0 +1,22 @@
+.carContainer {
+    height: 180px;
+    width: 320px;
+    background-color: white;
+}
+
+.carTitle {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    padding: 16px;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+}
+
+.carValue {
+    font-size: 14px;
+    text-align: center;
+    margin: 32px 10px 10px 10px;
+    color: #3f3f3f;
+}

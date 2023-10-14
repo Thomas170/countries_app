@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./CountryDetails.module.css";
-import LocationDetails from "./LocationDetails/LocationDetails";
-import CapitalAndPopulationDetails from "./CapitalAndPopulationDetails/CapitalAndPopulationDetails";
-import OtherInfoDetails from "./OtherInfoDetails/OtherInfoDetails";
+import LocationDetails from "./DetailsElements/LocationDetails/LocationDetails";
+import CapitalAndPopulationDetails from "./DetailsElements/CapitalAndPopulationDetails/CapitalAndPopulationDetails";
+import LanguagesDetails from "./DetailsElements/LanguagesDetails/LanguagesDetails";
+import CurrenciesDetails from "./DetailsElements/CurrenciesDetails/CurrenciesDetails";
+import CarDetails from "./DetailsElements/CarDetails/CarDetails";
+import StartOfWeekDetails from "./DetailsElements/StartOfWeekDetails/StartOfWeekDetails";
 
 const CountryDetails = ({details}) => {
 
@@ -13,8 +16,13 @@ const CountryDetails = ({details}) => {
 
         <CapitalAndPopulationDetails details={details} />
 
-        <OtherInfoDetails details={details} />
+        <LanguagesDetails details={details} />
 
+        <CurrenciesDetails details={details} />
+
+        <CarDetails details={details} />
+
+        <StartOfWeekDetails details={details} />
     </div>
 }
 

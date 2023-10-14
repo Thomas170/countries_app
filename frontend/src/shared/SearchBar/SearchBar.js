@@ -13,7 +13,7 @@ const SearchBar = ({placeholder, changeValue, search}) => {
         <Button
             action={search}
             value='Search'
-            color='blue'
+            color='main'
         />
     </div>
 }

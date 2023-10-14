@@ -14,10 +14,10 @@
     transform: scale(1.02);
 }
 
-.blue {
-    background-color: #52adf5;
+.main {
+    background-color: var(--main-color);
 }
 
-.blue:active {
-    background-color: #2f82bd;
+.main:active {
+    background-color: #c176ec;
 }

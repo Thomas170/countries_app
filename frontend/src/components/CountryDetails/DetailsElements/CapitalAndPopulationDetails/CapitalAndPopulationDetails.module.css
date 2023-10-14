@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.cardContainer {
+    height: 200px;
+    width: 360px;
+    background-color: white;
+}
+
+.cardTitle {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    padding: 16px;
+    background: var(--main-color);
+    color: white
+}
+
+.detailValue {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 24px 10px 24px;
+    color: #3f3f3f;
+}

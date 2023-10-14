@@ -1,14 +1,8 @@
-.map {
-    text-align: left;
-    display: flex;
-    margin: 48px 0 20px 0;
-}
-
 .flag {
     width: 90%;
     height: 420px;
     margin-left: 5%;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     border-radius: 20px;
     font-size: 14px;
     box-shadow: 2px 2px 8px 2px rgb(0, 0, 0, 0.1);
@@ -25,7 +19,6 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin-bottom: 80px;
 }
 
 .value {
