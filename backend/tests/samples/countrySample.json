@@ -1,0 +1,37 @@
+{
+    "name": "Canada",
+    "region": "Americas",
+    "location": {
+        "latitude": 60,
+        "longitude": -95
+    },
+    "area": 9984670,
+    "map": "https://goo.gl/maps/jmEVLugreeqiZXxbA",
+    "capital": [
+        "Ottawa"
+    ],
+    "capitalLocation": {
+        "latitude": 45.42,
+        "longitude": -75.7
+    },
+    "languages": [
+        "English",
+        "French"
+    ],
+    "population": 38005238,
+    "demonym": "Canadian",
+    "flag": "https://flagcdn.com/w320/ca.png",
+    "currencies": [
+        {
+            "name": "Canadian dollar",
+            "symbol": "$"
+        }
+    ],
+    "car": {
+        "signs": [
+            "CDN"
+        ],
+        "side": "right"
+    },
+    "startOfWeek": "sunday"
+}
