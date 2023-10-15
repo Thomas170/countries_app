@@ -14,7 +14,6 @@ async function getCountryDetails(req, res) {
         res.json(country);
     } catch (error) {
         console.error(error.message);
-        console.log(res, res.status, res.json);
         res.status(error.response.status).json({ error: error.message });
     }
 }

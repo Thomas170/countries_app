@@ -13,9 +13,9 @@ const port = process.env.PORT || 8000;
 
 app.use(cors(corsOptions));
 
-app.use(loggerMiddleware);
+//app.use(loggerMiddleware);
 if (process.env.PROD) {
-    app.use(apiKeyMiddleware);
+    //app.use(apiKeyMiddleware);
 }
 
 app.use('/api/countries', CountryRoutes);

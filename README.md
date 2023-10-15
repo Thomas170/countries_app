@@ -1,69 +1,90 @@
+
 ![Logo](https://bounceinsights.com/wp-content/uploads/2020/06/method-draw-image-1.svg)
 
 
-# Countries App
+# Countries App (frontend)
 
 The principle of the project is to retrieve information concerning a country by entering its name.
 
+⚠️ There are a lot of information for both backend and frontend apps so there are a README.md file inside each app with more details. ⚠️
+
 
 ## Run Locally
-
-To launch the app:
-
-```bash
-  ./lauch.sh
-```
-
-To run tests:
+### With Docker and Docker compose
+Run the launch script:
 
 ```bash
-  npm run test
+./launch.sh
 ```
 
-To open the application in local:
+If there is a permission error, make :
 
 ```bash
-  http://localhost:3000
+chmod +xr launch.sh
 ```
 
-To open the swagger documentation of the backend:
+If it still doesn't work, you can build and run manually :
 
 ```bash
-  http://localhost:8000/api-docs
+docker-compose build
+docker-compose up
 ```
 
+Go to http://localhost:3000
 
-## Environment file
-You can create if you want a .env file with some environment variables. Here is an example of this file :
+
+### Without Docker
+Run the backend app:
 
 ```bash
-PORT=8000
-REST_COUNTRIES_API_URL=https://restcountries.com/v3.1/name/
-API_KEY=key
-```
-## API Reference
-
-#### Get country details
-
-```http
-  GET /api/countries/{name}
+cd backend
+npm install
+npm start
 ```
 
-| Parameter   | Type     | Description                |
-|:------------| :------- | :------------------------- |
-| `x-api-key` | `string` | **Required**. Your API key |
+Go back in the root folder with another terminal:
+
+```bash
+cd ..
+```
+
+Run the frontend app:
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Go to http://localhost:3000
 
 
+## How the app works ?
 
+To use the app, go to **http://localhost:3000** (in local) or to **https://countries-app-website.vercel.app**
+
+⚠️ The app is deployed on **Vercel** because Heroku has become paid. ⚠️
+
+You will see a **Search Bar**. Type a country **name** in it and click on the **Search Button**.
+
+If the country name exists, **details about it** will appear under the search bar. You just have to read it and do it again if you want!
 ## Tech Stack
 
 **Client:** React
+**Server:** Express/NodeJs
 
-**Server:** Node, Express
+## Libraries
 
+- **axios**: To make requests easily.
+- **react-icons**: To use icons.
+- **react-loader-spinner**: To add a component loader in html/css
+- **concurrently**: To run to npm scripts in parallel.
+- **cypress**: To make some tests.
 
 ## Author
+
 Thomas Cacelles
+
 - [Github](https://www.github.com/Thomas170)
 - [LinkedIn](https://linkedin.com/in/thomas-cacelles-841822231)
 
