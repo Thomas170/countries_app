@@ -1,70 +1,90 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo](https://bounceinsights.com/wp-content/uploads/2020/06/method-draw-image-1.svg)
 
-## Available Scripts
 
-In the project directory, you can run:
+# Countries App (frontend)
 
-### `npm start`
+The principle of the project is to retrieve information concerning a country by entering its name.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+⚠️ There are a lot of information for both backend and frontend apps so there are a README.md file inside each app with more details. ⚠️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Run Locally
+### With Docker and Docker compose
+Run the launch script:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+./launch.sh
+```
 
-### `npm run build`
+If there is a permission error, make :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+chmod +xr launch.sh
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If it still doesn't work, you can build and run manually :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+docker-compose build
+docker-compose up
+```
 
-### `npm run eject`
+Go to http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Without Docker
+Run the backend app:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd backend
+npm install
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Go back in the root folder with another terminal:
 
-## Learn More
+```bash
+cd ..
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run the frontend app:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd frontend
+npm install
+npm start
+```
 
-### Code Splitting
+Go to http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## How the app works ?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To use the app, go to **http://localhost:3000** (in local) or to **https://countries-app-website.vercel.app**
 
-### Making a Progressive Web App
+⚠️ The app is deployed on **Vercel** because Heroku has become paid. ⚠️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+You will see a **Search Bar**. Type a country **name** in it and click on the **Search Button**.
 
-### Advanced Configuration
+If the country name exists, **details about it** will appear under the search bar. You just have to read it and do it again if you want!
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Client:** React
+**Server:** Express/NodeJs
 
-### Deployment
+## Libraries
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **axios**: To make requests easily.
+- **react-icons**: To use icons.
+- **react-loader-spinner**: To add a component loader in html/css
+- **concurrently**: To run to npm scripts in parallel.
+- **cypress**: To make some tests.
 
-### `npm run build` fails to minify
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thomas Cacelles
+
+- [Github](https://www.github.com/Thomas170)
+- [LinkedIn](https://linkedin.com/in/thomas-cacelles-841822231)
+

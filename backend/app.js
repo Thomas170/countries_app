@@ -12,8 +12,11 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 app.use(cors(corsOptions));
+
 app.use(loggerMiddleware);
-app.use(apiKeyMiddleware);
+if (process.env.PROD) {
+    app.use(apiKeyMiddleware);
+}
 
 app.use('/api/countries', CountryRoutes);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
