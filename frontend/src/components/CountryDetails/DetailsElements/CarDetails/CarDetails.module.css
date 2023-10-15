@@ -20,3 +20,10 @@
     margin: 32px 10px 10px 10px;
     color: #3f3f3f;
 }
+
+@media (max-width: 1000px) {
+    .carContainer {
+        height: fit-content;
+        width: 240px;
+    }
+}

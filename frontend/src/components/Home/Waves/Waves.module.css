@@ -19,3 +19,9 @@
 .custom-shape-divider-top-1697303559 .shape-fill {
     fill: var(--main-color, #e15bd6);
 }
+
+@media (max-width: 1000px) {
+    .custom-shape-divider-top-1697303559 {
+        width: 160%;
+    }
+}
