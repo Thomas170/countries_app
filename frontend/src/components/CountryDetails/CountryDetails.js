@@ -9,8 +9,8 @@ import StartOfWeekDetails from "./DetailsElements/StartOfWeekDetails/StartOfWeek
 
 const CountryDetails = ({details}) => {
 
-    return <div className={styles.container}>
-        <h3 className={styles.name}>{details?.name}</h3>
+    return <div className={styles.container} data-testid='test-country-details'>
+        <h3 className={styles.name} data-testid='test-country-name'>{details?.name}</h3>
 
         <LocationDetails details={details} />
 

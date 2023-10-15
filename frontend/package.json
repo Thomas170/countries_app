@@ -19,7 +19,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "docker": "docker build -t frontend-app . && docker run -p 3000:3000 frontend-app"
+    "docker": "docker build -t frontend-app . && docker run -p 3000:3000 frontend-app",
+    "cypress:unit:open": "cypress open --component",
+    "cypress:unit:run": "cypress run --component",
+    "cypress:e2e:open": "REACT_APP_BACKEND_API_URL=https://countries-app-backend-eight.vercel.app concurrently \"npm run start\" \"cypress open\"",
+    "cypress:e2e:run": "REACT_APP_BACKEND_API_URL=https://countries-app-backend-eight.vercel.app concurrently \"npm run start\" \"cypress run --spec \"cypress/e2e/**/*.cy.js\"\""
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "cypress": "^13.3.1"
   }
 }
