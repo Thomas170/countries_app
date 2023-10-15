@@ -49,9 +49,9 @@ API_KEY=key
   GET /api/countries/{name}
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+| Parameter   | Type     | Description                |
+|:------------| :------- | :------------------------- |
+| `x-api-key` | `string` | **Required**. Your API key |
 
 
 
