@@ -45,7 +45,7 @@ Install all the dependancies:
 npm install
 ```
 
-Run the server:
+Run the app:
 
 ```bash
 npm start

@@ -44,7 +44,7 @@ Install all the dependancies:
 npm install
 ```
 
-Run the server:
+Run the app:
 
 ```bash
 npm start
@@ -80,21 +80,21 @@ To run tests by **without** the cypress window for **e2e** tests:
 ```
 
 
-## How the server works ?
+## How the app works ?
 
-To use the server, go to **http://localhost:3000** (in local) or to **https://countries-server-website.vercel.server**.
+To use the app, go to **http://localhost:3000** (in local) or to **https://countries-app-website.vercel.app**.
 
 You will see a **Search Bar**. Type a country **name** in it and click on the **Search Button**.
 
 If the country name exists, **details about it** will appear under the search bar. You just have to read it and do it again if you want!
 
-## How the server is structured ?
+## How the app is structured ?
 
-- In the **public** folder, you will find the images and fonts used in the server.
+- In the **public** folder, you will find the images and fonts used in the app.
 
 - In the **cypress/e2e** folder, you will find the end to end tests.
 
-- In the **src/components** folder, you will find all the main components of the server (like home page etc...).
+- In the **src/components** folder, you will find all the main components of the app (like home page etc...).
 
 - In the **src/shared** folder, you will find all the global/reusable components (like a simple button etc...).
 
