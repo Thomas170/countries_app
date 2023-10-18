@@ -1,5 +1,5 @@
-const CountryService = require('../src/services/CountryService');
-const CountryController = require('../src/controllers/CountryController');
+const CountryService = require('../app/services/CountryService');
+const CountryController = require('../app/controllers/CountryController');
 const countrySample = require('./samples/countrySample.json');
 
 describe('CountryService', () => {

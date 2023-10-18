@@ -45,7 +45,7 @@ Install all the dependancies:
 npm install
 ```
 
-Run the app:
+Run the server:
 
 ```bash
 npm start
@@ -79,21 +79,26 @@ npm run test
 
 ## How the API is structured ?
 
-- In the **config** folder, you will find the configuration for cors and swagger.
+- In the **config** folder, you will find the configuration for cors, swagger and logging.
 
 - In the **tests** folder, you will find the tests.
 
-- In the **src/controllers** folder, you will find the controllers of the api which corresponds to the first part in action when calling an endpoint.
+- In the **server.js** file, you will find the server configuration.
 
-- In the **src/middlewares** folder, you will find the middlewares like the api key verification or the logger.
+- In the **app/index.js** file, you will find the app configuration.
 
-- In the **src/models** folder, you will find the models used like the DTOs (objects received or returned to the client) or the DAOs (objects stored in the database).
+- In the **app/controllers** folder, you will find the controllers of the api which corresponds to the first part in action when calling an endpoint.
 
-- In the **src/routes** folder, you will find the endpoints of the api.
+- In the **app/middlewares** folder, you will find the middlewares like the api key verification or the logger.
 
-- In the **src/services** folder, you will find the logic of the API like communications with the database or calls to public APIs.
+- In the **app/models** folder, you will find the models used like the DTOs (objects received or returned to the client) or the DAOs (objects stored in the database).
 
-- In the **src/utils** folder, you will find some useful functions.
+- In the **app/routes** folder, you will find the endpoints of the api.
+
+- In the **app/services** folder, you will find the logic of the API like communications with the database or calls to public APIs.
+
+- In the **app/utils** folder, you will find some useful functions.
+
 ## Tech Stack
 
 **Server:** Express/NodeJs
@@ -105,7 +110,10 @@ npm run test
 - **dotenv**: To use environment variables in any files.
 - **express**: To handle the server part.
 - **swagger-jsdoc/swagger-ui-express**: To document the api with swagger.
+- **body-parser**: To parse the body of a request.
+- **winston**: To add a logger.
 - **jest**: To make some tests.
+
 ## Author
 
 Thomas Cacelles

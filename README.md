@@ -6,7 +6,7 @@
 
 The principle of the project is to retrieve information concerning a country by entering its name.
 
-⚠️ There are a lot of information for both backend and frontend apps so there are a README.md file inside each app with more details. ⚠️
+⚠️ There are a lot of information for both backend and frontend apps so there are a README.md file inside each server with more details. ⚠️
 
 
 ## Run Locally
@@ -34,7 +34,7 @@ Go to http://localhost:3000
 
 
 ### Without Docker
-Run the backend app:
+Run the backend server:
 
 ```bash
 cd backend
@@ -48,7 +48,7 @@ Go back in the root folder with another terminal:
 cd ..
 ```
 
-Run the frontend app:
+Run the frontend server:
 
 ```bash
 cd frontend
@@ -59,15 +59,16 @@ npm start
 Go to http://localhost:3000
 
 
-## How the app works ?
+## How the server works ?
 
-To use the app, go to **http://localhost:3000** (in local) or to **https://countries-app-website.vercel.app**
+To use the server, go to **http://localhost:3000** (in local) or to **https://countries-server-website.vercel.server**
 
-⚠️ The app is deployed on **Vercel** because Heroku has become paid. ⚠️
+⚠️ The server is deployed on **Vercel** because Heroku has become paid. ⚠️
 
 You will see a **Search Bar**. Type a country **name** in it and click on the **Search Button**.
 
 If the country name exists, **details about it** will appear under the search bar. You just have to read it and do it again if you want!
+
 ## Tech Stack
 
 **Client:** React
